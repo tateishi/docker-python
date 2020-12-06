@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  default:
+    build:
+      context: ./python
+    tty: true
+    stdin_open: true
+    volumes:
+      - ~/wks:/home/ubuntu/wks
