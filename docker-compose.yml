@@ -9,3 +9,5 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ~/wks:/home/ubuntu/wks
+      - ~/.bashrc:/home/ubuntu/.bashrc
+      - ~/.dotconfig:/home/ubuntu/.dotconfig
