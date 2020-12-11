@@ -1,5 +1,7 @@
 FROM ubuntu:20.04
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update && apt-get install -y \
         build-essential \
         libffi-dev \
@@ -13,7 +15,7 @@ RUN apt-get update && apt-get install -y \
         wget \
         curl
 
-RUN groupadd -g 1000 ubuntu && useradd -u 1000 -g ubuntu -m -s /bin/bash ubuntu
+RUN useradd -u 1000 -m -s /bin/bash ubuntu
 
 RUN apt-get install -y libpq-dev
 

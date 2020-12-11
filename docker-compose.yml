@@ -7,4 +7,5 @@ services:
     tty: true
     stdin_open: true
     volumes:
+      - /etc/localtime:/etc/localtime:ro
       - ~/wks:/home/ubuntu/wks
